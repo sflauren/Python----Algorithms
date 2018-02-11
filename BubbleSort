@@ -4,7 +4,7 @@ import time
 
 def bubbleSort(x):
     A = []
-    for i in range(x+1):
+    for i in range(x):
         A.append(random.randint(1, 9))
     A.sort()
     A.reverse()
@@ -13,7 +13,7 @@ def bubbleSort(x):
     start = time.time()
     while swapped:
         swapped = False
-    for i in range(1, N):
+        for i in range(1, N):
             if A[i-1] > A[i]:
                 A[i-1], A[i] = A[i], A[i-1]
                 swapped = True
